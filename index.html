@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Котейка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="tpl/img/favicon.png">
+    
+    <link rel="stylesheet" href="tpl/css/normalize.css">
+    <link rel="stylesheet" href="tpl/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cnt flxa">
+            <img src="tpl/img/logo.svg" alt="">
+            <nav id="nav">
+                <a href="" class="nav_link">
+                    Почему мы?
+                </a>
+                <a href="" class="nav_link">
+                    Номера
+                </a>
+                <a href="" class="nav_link">
+                    Отзывы
+                </a>
+                <a href="" class="nav_link">
+                    Как нас найти
+                </a>
+            </nav>
+            <div class="burger" id="burger">
+                <div class="burger_line l1"></div>
+                <div class="burger_line l2"></div>
+                <div class="burger_line l3"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cnt">
+            <h1>
+                Наши номера
+            </h1>
+            
+            <div class="cats_block">
+               
+                <div class="sort_block">
+                    <div class="cur_sort flx" id="cur_sort">
+                        <div class="cur_info">
+                            <img src="tpl/img/arrow_up.svg" alt="">
+                            <span>
+                                По площади
+                            </span>
+                        </div>
+                        <img src="tpl/img/open.svg" alt="" id="open_sort">
+                    </div>
+                    <div class="sort_variants" style="opacity: 0;">
+                        <div class="sort_variant">
+                            <img src="tpl/img/arrow_up.svg" alt="">
+                            <span>
+                                По площади
+                            </span>
+                        </div>
+                        <div class="sort_variant">
+                            <img src="tpl/img/arrow_down.svg" alt="">
+                            <span>
+                                По площади
+                            </span>
+                        </div>
+                        <div class="sort_variant">
+                            <img src="tpl/img/arrow_up.svg" alt="">
+                            <span>
+                                По цене
+                            </span>
+                        </div>
+                        <div class="sort_variant">
+                            <img src="tpl/img/arrow_down.svg" alt="">
+                            <span>
+                                По цене
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter_and_cats flx">
+                    <div class="birka" id="birka">
+                        Фильтр 
+                        <img src="tpl/img/open.svg" alt="">
+                    </div>
+                    <div class="filter_block" id="filter_block">
+                        <img src="tpl/img/open.svg" alt="" id="close_filter">
+                        <div class="filter_section">
+                            <div class="filter_section_header">
+                                Цена за сутки, ₽
+                            </div>
+                            <div class="filter_price_inputs">
+                                <input type="number" class="filter_price_input" placeholder="от 100" min="100" max="600" id="min_price">
+                                <input type="number" class="filter_price_input" placeholder="до 600" min="100" max="600" id="max_price">
+                            </div>
+                        </div>
+                        <div class="filter_section">
+                            <div class="filter_section_header">
+                                Площадь
+                            </div>
+                            <div class="filter_check_inputs square_inputs">
+                                <label for="s1" class="form_label">
+                                    <input type="checkbox" id="s1" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        0,63 м2
+                                    </span>
+                                </label>
+                                <label for="s2" class="form_label">
+                                    <input type="checkbox" id="s2" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        0,90 м2
+                                    </span>
+                                </label>
+                                <label for="s3" class="form_label">
+                                    <input type="checkbox" id="s3" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        1,13 м2
+                                    </span>
+                                </label>
+                                <label for="s4" class="form_label">
+                                    <input type="checkbox" id="s4" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        1,56 м2
+                                    </span>
+                                </label>
+                                <label for="s5" class="form_label">
+                                    <input type="checkbox" id="s5" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        2,56 м2
+                                    </span>
+                                </label>
+                                <label for="s6" class="form_label">
+                                    <input type="checkbox" id="s6" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        2,88 м2
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter_section">
+                            <div class="filter_section_header">
+                                Оснащение номера
+                            </div>
+                            <div class="filter_check_inputs eq_inputs">
+                                <label for="q1" class="form_label">
+                                    <input type="checkbox" id="q1" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        Пустой номер
+                                    </span>
+                                </label>
+                                <label for="q2" class="form_label">
+                                    <input type="checkbox" id="q2" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        Лежак
+                                    </span>
+                                </label>
+                                <label for="q3" class="form_label">
+                                    <input type="checkbox" id="q3" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        Когтеточка
+                                    </span>
+                                </label>
+                                <label for="q4" class="form_label">
+                                    <input type="checkbox" id="q4" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        Игровой-комплекс
+                                    </span>
+                                </label>
+                                <label for="q5" class="form_label">
+                                    <input type="checkbox" id="q5" checked="" class="form_checkbox">
+                                    <span class="label_text">
+                                        Домик
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter_btns">
+                            <div class="btn accept_btn" id="filter">
+                                Применить
+                            </div>
+                            <div class="btn reset_btn" id="reset">
+                                Сбросить фильтр
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards_grid">                       
+                        <div class="one_card disp s1 q1">
+                            <img src="tpl/img/cat1.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Эконом
+                                </div>
+                                <div class="card_size">
+                                    
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>0,63</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>100</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="one_card disp s2 q2 q3">
+                            <img src="tpl/img/cat2.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Эконом плюс
+                                </div>
+                                <div class="card_size">
+                                    Размеры (ШхГхВ) - 90х100х180 см
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>0,90</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p2.svg" alt="">
+                                        <img src="tpl/img/p3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>200</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="one_card disp s3 q2 q3 q4">
+                            <img src="tpl/img/cat3.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Комфорт
+                                </div>
+                                <div class="card_size">
+                                    Размеры (ШхГхВ) - 100х125х180 см
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>1,13</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p2.svg" alt="">
+                                        <img src="tpl/img/p3.svg" alt="">
+                                        <img src="tpl/img/p4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>250</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="one_card disp s4 q2 q3 q4">
+                            <img src="tpl/img/cat4.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Сьют
+                                </div>
+                                <div class="card_size">
+                                    Размеры (ШхГхВ) - 125х125х180 см
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>1,56</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p2.svg" alt="">
+                                        <img src="tpl/img/p3.svg" alt="">
+                                        <img src="tpl/img/p4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>350</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="one_card disp s5 q2 q3 q4 q5">
+                            <img src="tpl/img/cat5.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Люкс
+                                </div>
+                                <div class="card_size">
+                                    Размеры (ШхГхВ) - 160х160х180 см
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>2,56</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p2.svg" alt="">
+                                        <img src="tpl/img/p3.svg" alt="">
+                                        <img src="tpl/img/p4.svg" alt="">
+                                        <img src="tpl/img/p5.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>500</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="one_card disp s6 q2 q3 q4 q5">
+                            <img src="tpl/img/cat6.jpg" class="cat_pic" alt="">
+                            <div class="card_info">
+                                <div class="card_name">
+                                    Супер-Люкс
+                                </div>
+                                <div class="card_size">
+                                    Размеры (ШхГхВ) - 180х160х180 см
+                                </div>
+                                <div class="card_square">
+                                    Площадь - <span>2,88</span> м2
+                                </div>
+                                <div class="card_eqp">
+                                    Оснащение номера 
+                                    <div class="card_eqp_things">
+                                        <img src="tpl/img/p2.svg" alt="">
+                                        <img src="tpl/img/p3.svg" alt="">
+                                        <img src="tpl/img/p4.svg" alt="">
+                                        <img src="tpl/img/p5.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_price">
+                                    Цена за сутки: <a><span>600</span>₽</a>
+                                </div>
+                                <div class="card_btn">
+                                    <span>
+                                        Забронировать
+                                    </span> 
+                                    <div class="lapka_cnt">
+                                        <img src="tpl/img/lapka.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cnt flx">
+            <div class="footer_row">
+                <span><img src="tpl/img/copy.svg" alt=""> 2020 Все права защищены</span>
+                <a class="politics" href="/politics.pdf" target="_blank">Политика конфиденциальности</a>
+            </div>
+            <div>
+                Сделано в 
+                <a class="made_by" href="https://youtu.be/A_6wm8HVaVY?t=3" target="_blank">
+                    Koteyka_Production
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="tpl/js/script.js"></script>
+</body>
+</html>
