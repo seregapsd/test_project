@@ -39,19 +39,17 @@ function filter (){
     let min_price = document.getElementById('min_price').value;
     let max_price = document.getElementById('max_price').value;
     
-    if (min_price < 100)
+    if (min_price < 100 || min_price == '')
     {
         min_price = 100;
         document.getElementById('min_price').value = 100;
     }
     
-    if (max_price > 600 && max_price < 100)
+    if (max_price > 600 || max_price == '')
     {
         max_price = 600;
         document.getElementById('max_price').value = 600;
     }
-    
-    
     
     document.querySelectorAll('.one_card').forEach(function(obj){
         let tmp = +obj.querySelector('.card_price span').textContent;
