@@ -51,16 +51,6 @@ function filter (){
         document.getElementById('max_price').value = 600;
     }
     
-    if(max_price < min_price)
-    {
-        let tmp = max_price;
-        
-        max_price = min_price;
-        document.getElementById('max_price').value = min_price;
-        
-        min_price = tmp;
-        document.getElementById('min_price').value = tmp;
-    }
     
     
     document.querySelectorAll('.one_card').forEach(function(obj){
