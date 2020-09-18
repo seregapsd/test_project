@@ -45,7 +45,7 @@ function filter (){
         document.getElementById('min_price').value = 100;
     }
     
-    if (max_price > 600)
+    if (max_price > 600 && max_price < 100)
     {
         max_price = 600;
         document.getElementById('max_price').value = 600;
